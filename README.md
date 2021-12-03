@@ -8,3 +8,4 @@ Languages that I'm using:
 Current progress:
 
 - [Day 1](ocaml/day1/) (Ocaml)
+- [Day 2](rust/day2/) (Rust)

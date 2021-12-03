@@ -12,3 +12,5 @@
 *.cmi
 *.cmx
 *.o
+
+target/
