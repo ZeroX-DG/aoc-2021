@@ -1,18 +1,7 @@
-use std::fs::File;
-use std::io::{BufRead, BufReader};
-
 const FILE: &str = "src/day2/input.txt";
 
-fn read_input() -> Vec<String> {
-    let file = File::open(FILE).expect("Unable to read input file");
-    BufReader::new(file)
-        .lines()
-        .map(|l| l.expect("Unable to read line"))
-        .collect()
-}
-
 pub fn puzzle1() {
-    let lines = read_input();
+    let lines = crate::shared::read_input(FILE);
 
     let mut x: u32 = 0;
     let mut depth: u32 = 0;
@@ -33,7 +22,7 @@ pub fn puzzle1() {
 }
 
 pub fn puzzle2() {
-    let lines = read_input();
+    let lines = crate::shared::read_input(FILE);
 
     let mut x: usize = 0;
     let mut depth: usize = 0;
